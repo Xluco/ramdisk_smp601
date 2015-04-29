@@ -244,9 +244,6 @@ on boot
 # CS socket
     mkdir /dev/socket/cs_socket 0770 system system
 
-# SSWAP
-    write /proc/sys/vm/swappiness 130
-
 # PMS DVFS
     chown radio system /sys/power/cpufreq_table
     chown radio system /sys/power/cpufreq_max_limit
